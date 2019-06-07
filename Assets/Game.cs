@@ -17,10 +17,6 @@ public class Game : MonoBehaviour
     {
         instance = this;
         DontDestroyOnLoad(this);
-    }
-
-    private void OnApplicationLoadScene(int index)
-    {
         tilemap = FindObjectOfType<Tilemap>();
     }
 
