@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: maze_pellet
   m_EditorClassIdentifier: 
   type: 0
-  sprite: {fileID: -3052222761797252884, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}
+  sprite: {fileID: -1819112362194845485, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}

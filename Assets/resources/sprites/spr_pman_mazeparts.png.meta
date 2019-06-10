@@ -1,0 +1,3566 @@
+fileFormatVersion: 2
+guid: 4c9d06dff7221bc4fb42cefe7d4047d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9076906216759347871
+    second: spr_pman_giantpellet
+  - first:
+      213: -6675081878957195127
+    second: spr_pman_pellet
+  - first:
+      213: -3052222761797252884
+    second: spr_pman_dot
+  - first:
+      213: -9076906216759347871
+    second: spr_pman_mazeparts_0
+  - first:
+      213: -6675081878957195127
+    second: spr_pman_mazeparts_1
+  - first:
+      213: -3052222761797252884
+    second: spr_pman_mazeparts_2
+  - first:
+      213: -5659449108459260816
+    second: spr_pman_mazeparts_3
+  - first:
+      213: 4658406562851194249
+    second: spr_pman_mazeparts_4
+  - first:
+      213: -8673353965182139545
+    second: spr_pman_mazeparts_5
+  - first:
+      213: 758689940914825015
+    second: spr_pman_mazeparts_6
+  - first:
+      213: 5197042642163630510
+    second: spr_pman_mazeparts_7
+  - first:
+      213: -6798243237517426688
+    second: spr_pman_mazeparts_8
+  - first:
+      213: -6652496564104915513
+    second: spr_pman_mazeparts_9
+  - first:
+      213: 6859036424437739339
+    second: spr_pman_mazeparts_10
+  - first:
+      213: 3784947732418192428
+    second: spr_pman_mazeparts_11
+  - first:
+      213: 4314701611047549161
+    second: spr_pman_mazeparts_12
+  - first:
+      213: 8130308693683672974
+    second: spr_pman_mazeparts_13
+  - first:
+      213: -3204838787463957232
+    second: spr_pman_mazeparts_14
+  - first:
+      213: -7560893367594206190
+    second: spr_pman_mazeparts_15
+  - first:
+      213: 8533249323284094635
+    second: spr_pman_mazeparts_16
+  - first:
+      213: 3118757792170661800
+    second: spr_pman_mazeparts_17
+  - first:
+      213: 4467991968783595222
+    second: spr_pman_mazeparts_18
+  - first:
+      213: -8102241484774402008
+    second: spr_pman_mazeparts_19
+  - first:
+      213: -9220179880297017449
+    second: spr_pman_mazeparts_20
+  - first:
+      213: 6997681923206520803
+    second: spr_pman_mazeparts_21
+  - first:
+      213: 2975132277906011492
+    second: spr_pman_mazeparts_22
+  - first:
+      213: 6233777818421933508
+    second: spr_pman_mazeparts_23
+  - first:
+      213: -1250460561441962211
+    second: spr_pman_mazeparts_24
+  - first:
+      213: 5456696787728277128
+    second: spr_pman_mazeparts_25
+  - first:
+      213: -3124589365482621946
+    second: spr_pman_mazeparts_26
+  - first:
+      213: 3966579708195593050
+    second: spr_pman_mazeparts_27
+  - first:
+      213: -7372207229632901755
+    second: spr_pman_mazeparts_28
+  - first:
+      213: 4635184350802023489
+    second: spr_pman_mazeparts_29
+  - first:
+      213: -5362749502175170483
+    second: spr_pman_mazeparts_30
+  - first:
+      213: -2704416681309694627
+    second: spr_pman_mazeparts_31
+  - first:
+      213: -7614868840260776338
+    second: spr_pman_mazeparts_32
+  - first:
+      213: -1575856562028417102
+    second: spr_pman_mazeparts_33
+  - first:
+      213: -4797013645239270143
+    second: spr_pman_mazeparts_34
+  - first:
+      213: 8602349590096304592
+    second: spr_pman_mazeparts_35
+  - first:
+      213: 4636514082298777579
+    second: spr_pman_mazeparts_36
+  - first:
+      213: -1365842856703129062
+    second: spr_pman_mazeparts_37
+  - first:
+      213: -1832995558249661783
+    second: spr_pman_mazeparts_38
+  - first:
+      213: 6817263134970445220
+    second: spr_pman_mazeparts_39
+  - first:
+      213: 3686543425335963434
+    second: spr_pman_mazeparts_40
+  - first:
+      213: 8446378247727341974
+    second: spr_pman_mazeparts_41
+  - first:
+      213: -1122537490947920345
+    second: spr_pman_mazeparts_42
+  - first:
+      213: 441815257484541791
+    second: spr_pman_mazeparts_43
+  - first:
+      213: -8133377652980485280
+    second: spr_pman_mazeparts_44
+  - first:
+      213: 3626918492619918567
+    second: spr_pman_mazeparts_45
+  - first:
+      213: 8934615705630276509
+    second: spr_pman_mazeparts_46
+  - first:
+      213: -9216974068291789074
+    second: spr_pman_mazeparts_47
+  - first:
+      213: 4087904310097749606
+    second: spr_pman_mazeparts_48
+  - first:
+      213: 4674018054954599682
+    second: spr_pman_mazeparts_49
+  - first:
+      213: 7530757189055598630
+    second: spr_pman_mazeparts_50
+  - first:
+      213: -4748404641358615629
+    second: spr_pman_mazeparts_51
+  - first:
+      213: -5072463878189171961
+    second: spr_pman_mazeparts_52
+  - first:
+      213: 322952889852748072
+    second: spr_pman_mazeparts_53
+  - first:
+      213: 3371215902505883935
+    second: spr_pman_mazeparts_54
+  - first:
+      213: 4076583320607071397
+    second: spr_pman_mazeparts_55
+  - first:
+      213: 3726322312118363873
+    second: spr_pman_mazeparts_56
+  - first:
+      213: -4268850365189702050
+    second: spr_pman_mazeparts_57
+  - first:
+      213: -876491764179929008
+    second: spr_pman_mazeparts_58
+  - first:
+      213: 6216786062522369743
+    second: spr_pman_mazeparts_59
+  - first:
+      213: -5929230169074688517
+    second: spr_pman_mazeparts_60
+  - first:
+      213: -2722624582001961335
+    second: spr_pman_mazeparts_61
+  - first:
+      213: -4938582981910208721
+    second: spr_pman_mazeparts_62
+  - first:
+      213: 6742404914232123003
+    second: spr_pman_mazeparts_63
+  - first:
+      213: 180341641667590624
+    second: spr_pman_mazeparts_64
+  - first:
+      213: -2862226944156062147
+    second: spr_pman_mazeparts_65
+  - first:
+      213: -707607052155374933
+    second: spr_pman_mazeparts_66
+  - first:
+      213: 3892534612622842124
+    second: spr_pman_mazeparts_67
+  - first:
+      213: 4066915076079412989
+    second: spr_pman_mazeparts_68
+  - first:
+      213: 1536582482408235109
+    second: spr_pman_mazeparts_69
+  - first:
+      213: 2246788678668200357
+    second: spr_pman_mazeparts_70
+  - first:
+      213: -395554282341663977
+    second: spr_pman_mazeparts_71
+  - first:
+      213: 1700482614296892794
+    second: spr_pman_mazeparts_72
+  - first:
+      213: -6147731445567341144
+    second: spr_pman_mazeparts_73
+  - first:
+      213: -4847144814718097510
+    second: spr_pman_mazeparts_74
+  - first:
+      213: -8402191930829966091
+    second: spr_pman_mazeparts_75
+  - first:
+      213: 7529954316978477299
+    second: spr_pman_mazeparts_76
+  - first:
+      213: 5922482919626701679
+    second: spr_pman_mazeparts_77
+  - first:
+      213: -2080825541478809710
+    second: spr_pman_mazeparts_78
+  - first:
+      213: -4925183360075699526
+    second: spr_pman_mazeparts_79
+  - first:
+      213: 6597524252639711480
+    second: spr_pman_mazeparts_80
+  - first:
+      213: 6779193795091810331
+    second: spr_pman_mazeparts_81
+  - first:
+      213: 5577845869437315761
+    second: spr_pman_mazeparts_82
+  - first:
+      213: 1516654433123985041
+    second: spr_pman_mazeparts_83
+  - first:
+      213: -249256648388058256
+    second: spr_pman_mazeparts_84
+  - first:
+      213: 367556287850244572
+    second: spr_pman_mazeparts_85
+  - first:
+      213: 2490093983362710076
+    second: spr_pman_mazeparts_86
+  - first:
+      213: -3318867754389401045
+    second: spr_pman_mazeparts_87
+  - first:
+      213: 1224776075684213144
+    second: spr_pman_mazeparts_88
+  - first:
+      213: -3901691185903683667
+    second: spr_pman_mazeparts_89
+  - first:
+      213: -5258638541214596267
+    second: spr_pman_mazeparts_90
+  - first:
+      213: -4557937425624655744
+    second: spr_pman_mazeparts_91
+  - first:
+      213: -4041565825045696977
+    second: spr_pman_mazeparts_92
+  - first:
+      213: -7650185745219507856
+    second: spr_pman_dot
+  - first:
+      213: 2877107918998438975
+    second: spr_pman_pellet
+  - first:
+      213: 701165512929320350
+    second: spr_pman_powerpellet
+  - first:
+      213: 4284619502506363869
+    second: spr_pman_mazeparts_96
+  - first:
+      213: 7944767888048101331
+    second: spr_pman_mazeparts_97
+  - first:
+      213: -7938316992260403897
+    second: spr_pman_mazeparts_98
+  - first:
+      213: -7168582516309554992
+    second: spr_pman_mazeparts_99
+  - first:
+      213: 2413592760831510539
+    second: spr_pman_mazeparts_100
+  - first:
+      213: -5478327839480081277
+    second: spr_pman_mazeparts_101
+  - first:
+      213: -789656883987769395
+    second: spr_pman_mazeparts_102
+  - first:
+      213: -7751398377119793952
+    second: spr_pman_mazeparts_103
+  - first:
+      213: 5873641674794316534
+    second: spr_pman_mazeparts_104
+  - first:
+      213: 2819996525638543321
+    second: spr_pman_mazeparts_105
+  - first:
+      213: -7512630381917955209
+    second: spr_pman_mazeparts_106
+  - first:
+      213: -8033147458791888215
+    second: spr_pman_mazeparts_107
+  - first:
+      213: -1474315905726572924
+    second: spr_pman_mazeparts_108
+  - first:
+      213: -4395969406242488188
+    second: spr_pman_mazeparts_109
+  - first:
+      213: 2788553010321313244
+    second: spr_pman_mazeparts_110
+  - first:
+      213: 4395945854997698697
+    second: spr_pman_mazeparts_111
+  - first:
+      213: -3947576881730671537
+    second: spr_pman_mazeparts_112
+  - first:
+      213: 7693044141899547245
+    second: spr_pman_mazeparts_113
+  - first:
+      213: -2440992125113007342
+    second: spr_pman_mazeparts_114
+  - first:
+      213: -5550287138959822229
+    second: spr_pman_mazeparts_115
+  - first:
+      213: 8655148823760339901
+    second: spr_pman_mazeparts_116
+  - first:
+      213: -3344173009485966397
+    second: spr_pman_mazeparts_117
+  - first:
+      213: -724215287079226038
+    second: spr_pman_mazeparts_118
+  - first:
+      213: 5713934168476187671
+    second: spr_pman_mazeparts_119
+  - first:
+      213: -2005688996401643633
+    second: spr_pman_mazeparts_120
+  - first:
+      213: 3294800147201877861
+    second: spr_pman_mazeparts_121
+  - first:
+      213: 5552266976584109582
+    second: spr_pman_mazeparts_122
+  - first:
+      213: 5860103818860276926
+    second: spr_pman_mazeparts_123
+  - first:
+      213: 7451738685082754659
+    second: spr_pman_mazeparts_124
+  - first:
+      213: 1227158462592849226
+    second: spr_pman_mazeparts_125
+  - first:
+      213: 2243237028702921793
+    second: spr_pman_mazeparts_126
+  - first:
+      213: 8497760576987752006
+    second: spr_pman_mazeparts_127
+  - first:
+      213: 6526065587333143264
+    second: spr_pman_mazeparts_128
+  - first:
+      213: -6349369952476517449
+    second: spr_pman_mazeparts_129
+  - first:
+      213: -5400120691065190191
+    second: spr_pman_mazeparts_130
+  - first:
+      213: 4638791501348345078
+    second: spr_pman_mazeparts_131
+  - first:
+      213: 8917443312421328028
+    second: spr_pman_mazeparts_132
+  - first:
+      213: 5728196153553603757
+    second: spr_pman_mazeparts_133
+  - first:
+      213: 8644085721577041047
+    second: spr_pman_mazeparts_134
+  - first:
+      213: 6054082375257457369
+    second: spr_pman_mazeparts_135
+  - first:
+      213: -3296099529511847580
+    second: spr_pman_mazeparts_136
+  - first:
+      213: 248400005441308090
+    second: spr_pman_mazeparts_137
+  - first:
+      213: -3478293034436636284
+    second: spr_pman_mazeparts_138
+  - first:
+      213: 909506628275581953
+    second: spr_pman_mazeparts_139
+  - first:
+      213: 5055651290741422906
+    second: spr_pman_mazeparts_140
+  - first:
+      213: 6758505969257820275
+    second: spr_pman_mazeparts_141
+  - first:
+      213: -550648535972078877
+    second: spr_pman_mazeparts_142
+  - first:
+      213: -7676133910218803252
+    second: spr_pman_mazeparts_143
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ac15f642507db46b3166d15987669e
+      internalID: -9076906216759347871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730e78efc8a56cc469dc265c0f4c36aa
+      internalID: -6675081878957195127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e13f4eab0946ad41879f296f5393477
+      internalID: -3052222761797252884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c52e9a5a3f2da4fa0f6c7453deabf4
+      internalID: -5659449108459260816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dd065e9bdfced419b25aa8a7830e13
+      internalID: 4658406562851194249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82112ec7e220164baf8ab4c1f7e5dff
+      internalID: -8673353965182139545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ab96f68b7436240b65ac1c4b7f56d9
+      internalID: 758689940914825015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fde4111ab03a744b89e4bb273b858b
+      internalID: 5197042642163630510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ecd4f7513a4e5428156741ab1fc262
+      internalID: -6798243237517426688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19e42c31451df646b8f0a112023ed1c
+      internalID: -6652496564104915513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6504eed97c0079a4d880a70163fbd096
+      internalID: 6859036424437739339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86785addcfa04494187bdfc0cee397ab
+      internalID: 3784947732418192428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac29e192adc37e48b6784744136d5c8
+      internalID: 4314701611047549161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5cf26240411f04ca117fc9126e4762
+      internalID: 8130308693683672974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45135009e3acfcc4fa9aa96bf45939a3
+      internalID: -3204838787463957232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c084708127745b04ea1e3da02b49ef7f
+      internalID: -7560893367594206190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52756ed99b58514e83457183bc2b137
+      internalID: 8533249323284094635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893706c96fe47d04bad597246fc0be0d
+      internalID: 3118757792170661800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07c1671d61878b41b9e90468355be3d
+      internalID: 4467991968783595222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a59d2c73f0117d4d92ba6a280a93b6d
+      internalID: -8102241484774402008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a31addd145d44741b3b8d5466bdb706
+      internalID: -9220179880297017449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_21
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f980cef3b1e1df43a7cfb6cb8e76662
+      internalID: 6997681923206520803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_22
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229df34876bf0344599a7f16fbecfc58
+      internalID: 2975132277906011492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bc6dc7bc356f5439edb9793cb8bbe8
+      internalID: 6233777818421933508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_24
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a9a6bfe7c7a4a428958931d733af9d
+      internalID: -1250460561441962211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabec4444bdf0054bac3d82058e09016
+      internalID: 5456696787728277128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_26
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea216616d6c16c428100a6f595ef27f
+      internalID: -3124589365482621946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c384a7f50bb433f4ca1d7c623fe9432e
+      internalID: 3966579708195593050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_28
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fd30c8ccbe8a84aa022beca9c1b41d
+      internalID: -7372207229632901755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_29
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416aa58cf5a828e4cbc8ccf1ddcdbe09
+      internalID: 4635184350802023489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8618855c188139f468e002f85f1a6473
+      internalID: -5362749502175170483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 105
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444cdd28b6c3d574dab9c3482322ff63
+      internalID: -2704416681309694627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a48a9b9f8966fd4a90382b0f4bd1598
+      internalID: -7614868840260776338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea351774e561be4d83d645d2a99e9a7
+      internalID: -1575856562028417102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_34
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f316b36f7907543987455856e33266
+      internalID: -4797013645239270143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_35
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77158341046b95c4b82c0348cfda426c
+      internalID: 8602349590096304592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_36
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eefc81419e6c1e4d90c4cd33cd4314b
+      internalID: 4636514082298777579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_37
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c78c73471677e944b61c03e38ca41cb
+      internalID: -1365842856703129062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_38
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f95b1efe8b66b4ab5b25f700133de9
+      internalID: -1832995558249661783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7682ee73960662749b25b2cf754bed13
+      internalID: 6817263134970445220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_40
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f923b3d6cb8df46ae188fc4e31aaca
+      internalID: 3686543425335963434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_41
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2cfb1bc35a3fb43a7582983f54b08e
+      internalID: 8446378247727341974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_42
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc6f87e8fa10c9469282da08ff94e63
+      internalID: -1122537490947920345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5041581cf3291e4f9b93d2510e09939
+      internalID: 441815257484541791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_44
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e8e0f2aa0eb0a468a1842b28a9b11e
+      internalID: -8133377652980485280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_45
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb17957d429d35748a76933d981caf25
+      internalID: 3626918492619918567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_46
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963989a72f24b0147863ab26346dc139
+      internalID: 8934615705630276509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_47
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb96957399085554a8ccc868d6cb64cb
+      internalID: -9216974068291789074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47179820dbd79124fb7cdc66943b63ae
+      internalID: 4087904310097749606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_49
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfa8296353dc2748bfcfb743289f057
+      internalID: 4674018054954599682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_50
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17988b0e21fe7e049ae2df2e983f82e9
+      internalID: 7530757189055598630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_51
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135743b23c53e1841bd9b0da45a7aab6
+      internalID: -4748404641358615629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_52
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407c04779d6abe84ea25e1a4d5e8bea4
+      internalID: -5072463878189171961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_53
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d2a73e985f8094c83fb8a947d2ef89
+      internalID: 322952889852748072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_54
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c225068c8df596640a12e37ade6908fc
+      internalID: 3371215902505883935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f0c46ef64ca9943ac193c0b9d1e19a
+      internalID: 4076583320607071397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_56
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84ba62b0cdff004a83b3dc638ef1a4f
+      internalID: 3726322312118363873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_57
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cac1aa999755e64b9f19e3980023f69
+      internalID: -4268850365189702050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_58
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71a38b3a46d4914bacf8c0b88b58897
+      internalID: -876491764179929008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_59
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86845a6670c514b83a0f7305ee0f64
+      internalID: 6216786062522369743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_60
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e88791ef8be274c86ad903ef4a6b66
+      internalID: -5929230169074688517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_61
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3fe87fd66a63648986c787ed431d1d
+      internalID: -2722624582001961335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_62
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de0997e359794e4b9c42db4f2b04f78
+      internalID: -4938582981910208721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_63
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c3f5839ec256943803f70cd02592c5
+      internalID: 6742404914232123003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52920fbdf9dc6ef4fbb3a16142b31005
+      internalID: 180341641667590624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372cfd06761061a4895e0c6e82b2d092
+      internalID: -2862226944156062147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_66
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4727f827d9c09844e8aa5f4268ccac3c
+      internalID: -707607052155374933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_67
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b353347578435429543cd28e44a24f
+      internalID: 3892534612622842124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_68
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88d475d8e8bffe438e678b4ba00a3db
+      internalID: 4066915076079412989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_69
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2976b31943a58944a90f2d882720c1bd
+      internalID: 1536582482408235109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_70
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8d3d8f49acbb04c88688a0952bd2d1
+      internalID: 2246788678668200357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066e77a5b49bd3248bf95f0b80c0c5a3
+      internalID: -395554282341663977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_72
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2f7e57d1fcd174b9806dffe6850d13
+      internalID: 1700482614296892794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_73
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4fa361017e982419b242978808c9ed
+      internalID: -6147731445567341144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_74
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de66a12c7320f4f42b165f699ad41944
+      internalID: -4847144814718097510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42544e97e68a73649ae18b4a576ce45f
+      internalID: -8402191930829966091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_76
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46a6c6c69399d641ad3d6261710db6f
+      internalID: 7529954316978477299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_77
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7594f072f2294664e8f326e86e9313dd
+      internalID: 5922482919626701679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_78
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d7e2c43131f674b847a028f99b3761
+      internalID: -2080825541478809710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_79
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 78
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063f3749e5991f445966e27c4a0c3996
+      internalID: -4925183360075699526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30fbd85fa2b42a4e8fe080987aefd05
+      internalID: 6597524252639711480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_81
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e764dd36079f80b4480213444cd59b08
+      internalID: 6779193795091810331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_82
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01acf31d92ca5d4499477f8904514bc8
+      internalID: 5577845869437315761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_83
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f2f9288db92c549bc9937bcdc751eb
+      internalID: 1516654433123985041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_84
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3399d29b419e1d940a52543b2933b759
+      internalID: -249256648388058256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_85
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556ce733586fa954abdfad40077f51da
+      internalID: 367556287850244572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_86
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2e77cda5ba19349b683a842d747777
+      internalID: 2490093983362710076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_87
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee6f4086c5ddba4180f898eced55b41
+      internalID: -3318867754389401045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_88
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d9d0257912c4846962819ee9e0d7d8
+      internalID: 1224776075684213144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_89
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872022e55337cae4489db273e4a3b600
+      internalID: -3901691185903683667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_90
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26e44edba715044097c8a1bc54d1b51
+      internalID: -5258638541214596267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_91
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b8a6b55805cd4c8f4818e2d35f7f5
+      internalID: -4557937425624655744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_92
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948030298afed7e438ae1f4bfd4cfc72
+      internalID: -4041565825045696977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_dot
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecabc3eb56cb3d40abb128a97525476
+      internalID: -7650185745219507856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_pellet
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbb23452ef94e64c8243684f66b86bc
+      internalID: 2877107918998438975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_powerpellet
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ca7766184fd9043b7e52ca287cea30
+      internalID: 701165512929320350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb25d9b805da23846932e9bb634d18c6
+      internalID: 4284619502506363869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_97
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57018cfbd87e05c4388f9f89ebfd2334
+      internalID: 7944767888048101331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_98
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ebf417ffc44084fb82158bc89e6fa1
+      internalID: -7938316992260403897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_99
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcefac6c2d06c84ab0452ac7d77ef69
+      internalID: -7168582516309554992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_100
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a330bda4b96cc40ab99d34d6fc665b
+      internalID: 2413592760831510539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_101
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e68714c57ab1c4084faee375cbc8d6
+      internalID: -5478327839480081277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_102
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4367e10c40f87d440870d7d45e86acc7
+      internalID: -789656883987769395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3475362e2e7907740b7dc21e4c9629dd
+      internalID: -7751398377119793952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_104
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efcc9cc5726cf34c949ca690563da11
+      internalID: 5873641674794316534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_105
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1040eb751473e8b4ca38810dbf40c141
+      internalID: 2819996525638543321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_106
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028bac61dfd77c1429fa2a8d405e29f4
+      internalID: -7512630381917955209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_107
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb02c79dc779fad49b9cea84ed8ae3d2
+      internalID: -8033147458791888215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_108
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04be15a5102ca4d469533824990e5bf3
+      internalID: -1474315905726572924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_109
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f01f6e66c21234e836066afc5a8727
+      internalID: -4395969406242488188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_110
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8166faa3a4e91b4a87d34750246327d
+      internalID: 2788553010321313244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_111
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3aa0af4769faf4d8f26b3dcd9bad82
+      internalID: 4395945854997698697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d8b57c8e6277e49a306bb6ff04f845
+      internalID: -3947576881730671537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_113
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f127bb54ba7114880ff261febce831
+      internalID: 7693044141899547245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_114
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58131da2186f62b42aeafbcbe1546639
+      internalID: -2440992125113007342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_115
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ff53cf8250d4941bb5d648ff967cb4
+      internalID: -5550287138959822229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_116
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bad88a1eb4b79e40a1497bfb463e74c
+      internalID: 8655148823760339901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_117
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e9b2546f772246a5d8408aad0996b
+      internalID: -3344173009485966397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_118
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023f0d0d2be1601499ec0cfecf8e12b2
+      internalID: -724215287079226038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2902566fcf66c1842813bfa6c9f5c37d
+      internalID: 5713934168476187671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_120
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96749c09ed6b804da7d08a8e8cf17cf
+      internalID: -2005688996401643633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_121
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5f9220a4cbdfb468125388c6348130
+      internalID: 3294800147201877861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_122
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aa24b9c8149814d9a15a3ac72722ed
+      internalID: 5552266976584109582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_123
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37362706112c7ac479d037caaebbba2e
+      internalID: 5860103818860276926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_124
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81370857ee1e9f34f80314cbd3c847e5
+      internalID: 7451738685082754659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_125
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ab324dd9218c643b0bdf5f7941f4b2
+      internalID: 1227158462592849226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_126
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43780fbadb528e046a580c500859936b
+      internalID: 2243237028702921793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_127
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae62fadbef4cc844a33bd56bec59529
+      internalID: 8497760576987752006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_128
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d1856d153a0ac4a8995bef98a23e07
+      internalID: 6526065587333143264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_129
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afa695de01621c42a852ce5121f19e8
+      internalID: -6349369952476517449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_130
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba7defd8df25b4184a75aef1c45347
+      internalID: -5400120691065190191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_131
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d070dfe19e7c46e4aad8613bd1a7e25b
+      internalID: 4638791501348345078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_132
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b3ea4bd1ea8954d9023ac044f478c3
+      internalID: 8917443312421328028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_133
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c0217102611254aaeaaea6ee5509f3
+      internalID: 5728196153553603757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_134
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744a7995479a84e42a3dc77bedf458a7
+      internalID: 8644085721577041047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_135
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4989603c996708f48931c7d691af353f
+      internalID: 6054082375257457369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_136
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ce363d44acf6545bdb65dccf068abe
+      internalID: -3296099529511847580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_137
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78d9d5a9be68164aa1fe036ba1dc7b8
+      internalID: 248400005441308090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_138
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4895526e9c3fe8949a1092e3ae0ed17d
+      internalID: -3478293034436636284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_139
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1e03b5e4424c24282981d3683e2980
+      internalID: 909506628275581953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_140
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed6a09d76834c42b4f16795e396f85
+      internalID: 5055651290741422906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_141
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906b1b6fa2495114f984b0d3cd6800af
+      internalID: 6758505969257820275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_142
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f81d7f4845fcb744b3009e52d888f80
+      internalID: -550648535972078877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_pman_mazeparts_143
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cf6d0a14db4244cac1ab45149b5d1a
+      internalID: -7676133910218803252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fa327d74421bad844b1f0f8a36f328ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
