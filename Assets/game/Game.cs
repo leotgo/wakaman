@@ -9,7 +9,16 @@ public class Game : MonoBehaviour
     // Singleton
     private static Game instance = null;
 
+    // Consts
+    public const int SCORE_PELLET = 10;
+    public const int SCORE_POWERPELLET = 50;
+
+    // Match info
     private Tilemap tilemap;
+    public int score;
+
+    // Events
+    public delegate void OnCollect(CollectibleTile.CollectibleType type);
 
     // Unity Callbacks
 
@@ -18,6 +27,16 @@ public class Game : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(this);
         tilemap = FindObjectOfType<Tilemap>();
+
+        score = 0;
+    }
+
+    // Game
+
+    public static void AddScore(int score)
+    {
+        instance.score += score;
+        Debug.LogFormat("Score: {0}", instance.score);
     }
 
     // Utilities

@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - Characters
-  - 
-  - 
+  - Interactables
+  - Walls
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Collectibles
+    uniqueID: 4115232781
+    locked: 0
   - name: Characters
     uniqueID: 3410332905
+    locked: 0
+  - name: Overlay
+    uniqueID: 279795077
     locked: 0

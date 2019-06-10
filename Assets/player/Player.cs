@@ -9,12 +9,16 @@ public class Player : MonoBehaviour
     // Editor Tweakables
 
     [SerializeField] [Range(0.1f, 2f)] private float speed = 1f;
-    [SerializeField] private AudioClip[] sfxMunch;
 
     // Component Refs 
 
     private Animator anim;
     private AudioSource audioSrc;
+
+    // Collision masks
+
+    [SerializeField] private LayerMask lmWalls;
+    [SerializeField] private LayerMask lmInteractors;
 
     // Runtime vars
 
@@ -102,23 +106,35 @@ public class Player : MonoBehaviour
     IEnumerator MoveTileRoutine(Vector3Int dir)
     {
         isMoving = true;
+        anim.SetBool("is_moving", true);
+
         float dt = Time.fixedDeltaTime;
+        float step = speed * dt;
         Vector3 targetPos = GetCellPosByOffset(dir);
-        while (Vector3.Distance(transform.position, targetPos) > 0.01f)
+        while (Vector3.Distance(transform.position, targetPos) > step)
         {
+            
             transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * dt);
+            var coll = Physics2D.OverlapPoint(transform.position, lmInteractors.value);
+            if (coll != null)
+            {
+                coll.GetComponent<IInteractable>()?.OnInteract(this);
+                var teleporterPos = coll.GetComponent<Teleporter>()?.target?.position;
+                targetPos = teleporterPos.HasValue ? GetCellPosByOffset(dir) : targetPos;
+            }
             yield return new WaitForFixedUpdate();
         }
         transform.position = targetPos;
         lastMoveDir = dir;
         isMoving = false;
+        anim.SetBool("is_moving", false);
     }
 
     // Returns true if the player will collide with a wall in a given movement direction.
     private bool CheckMoveCollision(Vector3Int dir)
     {
         Vector3 nextCellPos = GetCellPosByOffset(dir);
-        var coll = Physics2D.OverlapPoint(nextCellPos);
+        var coll = Physics2D.OverlapPoint(nextCellPos, lmWalls.value);
         Debug.DrawRay(transform.position, nextCellPos - transform.position);
         return coll != null;
     }
