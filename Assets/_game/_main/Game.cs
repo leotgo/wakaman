@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -26,9 +27,9 @@ namespace Wakaman
             instance = this;
             DontDestroyOnLoad(this);
             tilemap = FindObjectOfType<Tilemap>();
-
             matchInfo = new MatchInfo();
             GameEvents.onCollect += OnCollectItem;
+            GameEvents.onCollectFruit += OnCollectFruit;
         }
 
         // -------------------------- //
@@ -49,6 +50,11 @@ namespace Wakaman
                     matchInfo.Score += gameDefs.GetFruitScore(matchInfo.Stage);
                     break;
             }
+        }
+
+        public void OnCollectFruit(FruitType type)
+        {
+            matchInfo.AddNewFruit(type);
         }
 
         // -------------------------- //

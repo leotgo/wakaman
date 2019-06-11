@@ -45,6 +45,7 @@ namespace Wakaman
             Score = 0;
             Lives = 2;
             fruits = new List<FruitType>();
+            GameEvents.FruitsChange(fruits);
         }
 
         // -------------------------- //

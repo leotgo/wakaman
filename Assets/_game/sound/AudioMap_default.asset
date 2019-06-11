@@ -32,3 +32,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     pitchVariance: 0
+  - name: EVENT_MUNCH_FRUIT
+    type: 2
+    clips:
+    - {fileID: 8300000, guid: 6afc0eea721a11c48ad229cca6f7cb45, type: 3}
+    method: 0
+    volume: 1
+    pitch: 1
+    pitchVariance: 0

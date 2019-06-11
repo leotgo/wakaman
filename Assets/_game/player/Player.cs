@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Wakaman.Utilities;
 
 namespace Wakaman.Entities
 {
@@ -20,7 +21,10 @@ namespace Wakaman.Entities
         [SerializeField] private LayerMask lmInteractors;
 
         // Runtime vars
+        private Vector3 startPos;
+        private bool isDead;
         private bool isMoving;
+        private bool isFrozen;
         private Vector3Int lastMoveDir;
 
         // -------------------------- //
@@ -30,7 +34,8 @@ namespace Wakaman.Entities
         private void Start()
         {
             anim = GetComponent<Animator>();
-            isMoving = false;
+            startPos = transform.position;
+            Respawn();
         }
 
         private void Update()
@@ -52,39 +57,59 @@ namespace Wakaman.Entities
         // Actions
         // -------------------------- //
 
+        private void Respawn()
+        {
+            isDead = false;
+            isMoving = false;
+            isFrozen = false;
+
+            anim.SetBool("is_moving", false);
+            anim.SetBool("is_dead", false);
+            anim.SetFloat("dir_x", 1f);
+            anim.SetFloat("dir_y", 0f);
+
+            transform.position = startPos;
+        }
+
+        private void Freeze(bool frozen)
+        {
+            isFrozen = frozen;
+        }
+
         private void Die()
         {
-            GameEvents.Death();
-            anim.SetBool("is_dead", true);
+            if (isDead)
+                return;
+
+            StartCoroutine(DeathRoutine());
         }
 
-        // -------------------------- //
-        // Movement-related methods
-        // -------------------------- //
-
-        // GetMovementDir: Returns a discrete movement direction
-        //                 based on Horizontal and Vertical axes.
-        private Vector3Int GetMovementDir(float x, float y)
+        private IEnumerator DeathRoutine()
         {
-            // Movement direction priority like in the old arcade games.
-            // Right > Left > Down > Up
-            Vector3Int dir = Vector3Int.zero;
-            if (x > 0f)
-                dir = Vector3Int.right;
-            else if (x < 0f)
-                dir = Vector3Int.left;
-            else if (y < 0f)
-                dir = Vector3Int.down;
-            else if (y > 0f)
-                dir = Vector3Int.up;
-
-            return dir;
+            isDead = true;
+            Time.timeScale = 0f;
+            yield return new WaitForSecondsRealtime(1f);
+            Time.timeScale = 1f;
+            anim.SetBool("is_dead", true);
+            GameEvents.Death();
+            yield return new WaitForSeconds(3f);
+            Respawn();
+            Freeze(true);
+            yield return new WaitForSeconds(1f);
+            Freeze(false);
         }
+
+        // -------------------------- //
+        // Movement
+        // -------------------------- //
 
         // Move: Checks for wall collision and performs intended player
         //       movement when possible.
         private void Move(Vector3Int dir)
         {
+            if (isDead || isFrozen)
+                return;
+
             bool isHorizontal = Mathf.Abs(dir.x) > 0f;
             // Adjacent tiles are checked to see if the player is close to a
             // corner to facilitate turning.
@@ -124,7 +149,7 @@ namespace Wakaman.Entities
             float dt = Time.fixedDeltaTime;
             float step = speed * dt;
             Vector3 targetPos = GetCellPosByOffset(dir);
-            while (Vector3.Distance(transform.position, targetPos) > step)
+            while (!isDead && Vector3.Distance(transform.position, targetPos) > step)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
                 // Checks if there are any interactor objects in player's position
@@ -139,17 +164,41 @@ namespace Wakaman.Entities
                 }
                 yield return new WaitForFixedUpdate();
             }
-            transform.position = targetPos;
+            if(!isDead)
+                transform.position = targetPos;
+
             lastMoveDir = dir;
             isMoving = false;
             anim.SetBool("is_moving", false);
+        }
+
+        // -------------------------- //
+        // Helpers
+        // -------------------------- //
+
+        // GetMovementDir: Returns a discrete movement direction
+        //                 based on Horizontal and Vertical axes.
+        private Vector3Int GetMovementDir(float x, float y)
+        {
+            // Movement direction priority like in the old arcade games.
+            // Right > Left > Down > Up
+            Vector3Int dir = Vector3Int.zero;
+            if (x > 0f)
+                dir = Vector3Int.right;
+            else if (x < 0f)
+                dir = Vector3Int.left;
+            else if (y < 0f)
+                dir = Vector3Int.down;
+            else if (y > 0f)
+                dir = Vector3Int.up;
+
+            return dir;
         }
 
         private bool CheckWallCollision(Vector3Int dir)
         {
             Vector3 nextCellPos = GetCellPosByOffset(dir);
             var coll = Physics2D.OverlapPoint(nextCellPos, lmWalls.value);
-            Debug.DrawRay(transform.position, nextCellPos - transform.position);
             return coll != null;
         }
 

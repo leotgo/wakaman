@@ -40,8 +40,10 @@ namespace Wakaman.Sound
                     audioMap?.GetEvent(AudioEvent.AudioEventType.Munch)?.Play(audioSrc);
                     break;
                 case CollectibleType.PowerPellet:
+                    audioMap?.GetEvent(AudioEvent.AudioEventType.PowerPellet)?.Play(audioSrc);
                     break;
                 case CollectibleType.Fruit:
+                    audioMap?.GetEvent(AudioEvent.AudioEventType.Fruit)?.Play(audioSrc);
                     break;
                 default:
                     break;
