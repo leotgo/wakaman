@@ -6,7 +6,8 @@ namespace Wakaman.UI
     public class UIScoreboard : MonoBehaviour
     {
         // Component Refs
-        private Text scoreText;
+        [SerializeField] private Text scoreText;
+        [SerializeField] private Text highScoreText;
 
         // -------------------------- //
         // Monobehaviour
@@ -14,8 +15,7 @@ namespace Wakaman.UI
 
         private void Start()
         {
-            scoreText = GetComponent<Text>();
-            Game.onScoreChange += UpdateScoreText;
+            GameEvents.onScoreChange += UpdateScoreText;
         }
 
         // -------------------------- //
@@ -24,7 +24,14 @@ namespace Wakaman.UI
 
         public void UpdateScoreText(int newScore)
         {
-            scoreText.text = newScore.ToString();
+            if(scoreText)
+                scoreText.text = newScore.ToString();
+        }
+
+        public void UpdateHighscoreText(int newHighScore)
+        {
+            if(highScoreText)
+                highScoreText.text = newHighScore.ToString();
         }
     }
 }

@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075d8f3b52902c44ac8cd33abecdef5, type: 3}
+  m_Name: GD_DefaultGameDefs
+  m_EditorClassIdentifier: 
+  stages:
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 1
+    fruitScore: 100
+    ghostBlueTime: 6
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 2
+    fruitScore: 300
+    ghostBlueTime: 5
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 3
+    fruitScore: 500
+    ghostBlueTime: 4
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 3
+    fruitScore: 500
+    ghostBlueTime: 3
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 4
+    fruitScore: 700
+    ghostBlueTime: 2
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 4
+    fruitScore: 700
+    ghostBlueTime: 5
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 5
+    fruitScore: 1000
+    ghostBlueTime: 2
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 5
+    fruitScore: 1000
+    ghostBlueTime: 2
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 6
+    fruitScore: 2000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 6
+    fruitScore: 2000
+    ghostBlueTime: 5
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 7
+    fruitScore: 3000
+    ghostBlueTime: 2
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 7
+    fruitScore: 3000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 3
+    ghostFlashes: 5
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 0
+    ghostFlashes: 0
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 1
+    ghostFlashes: 3
+  - pelletScore: 10
+    powerPelletScore: 50
+    fruitType: 8
+    fruitScore: 5000
+    ghostBlueTime: 0
+    ghostFlashes: 0
+  stageDefsFile: {fileID: 4900000, guid: e30827fa830192640ab02dd41f441c2f, type: 3}

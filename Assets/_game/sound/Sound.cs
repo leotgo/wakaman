@@ -21,8 +21,8 @@ namespace Wakaman.Sound
         private void Start()
         {
             audioSrc = GetComponent<AudioSource>();
-            Game.onCollect += OnCollectItem;
-            Game.onDeath += OnPlayerDeath;
+            GameEvents.onCollect += OnCollectItem;
+            GameEvents.onDeath += OnPlayerDeath;
 
             if (!audioMap)
                 Debug.LogWarningFormat("AudioMap is not set in {0}", name);

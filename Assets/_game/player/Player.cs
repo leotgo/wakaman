@@ -54,7 +54,7 @@ namespace Wakaman.Entities
 
         private void Die()
         {
-            Game.Death();
+            GameEvents.Death();
             anim.SetBool("is_dead", true);
         }
 
@@ -96,17 +96,17 @@ namespace Wakaman.Entities
             bool adj2IsInverseDir = adjDir2 == (lastMoveDir * -1);
 
             // Checks if next tile is a wall.
-            if (!CheckMoveCollision(dir))
+            if (!CheckWallCollision(dir))
             {
                 StartCoroutine(MoveTileRoutine(dir));
             }
             // Checks if tiles adjacent to the next are walls and assists
             // player movement when turning corners (less precision required!)
-            else if (!adj1IsInverseDir && !CheckMoveCollision(dir + adjDir1))
+            else if (!adj1IsInverseDir && !CheckWallCollision(dir + adjDir1))
             {
                 StartCoroutine(MoveTileRoutine(adjDir1));
             }
-            else if (!adj2IsInverseDir && !CheckMoveCollision(dir + adjDir2))
+            else if (!adj2IsInverseDir && !CheckWallCollision(dir + adjDir2))
             {
                 StartCoroutine(MoveTileRoutine(adjDir2));
             }
@@ -126,12 +126,14 @@ namespace Wakaman.Entities
             Vector3 targetPos = GetCellPosByOffset(dir);
             while (Vector3.Distance(transform.position, targetPos) > step)
             {
-
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
+                // Checks if there are any interactor objects in player's position
                 var coll = Physics2D.OverlapPoint(transform.position, lmInteractors.value);
                 if (coll != null)
                 {
                     coll.GetComponent<IInteractable>()?.OnInteract(this);
+                    // If interactor is a teleporter, the rest of the routine should
+                    // move the player to the teleporter's target destination.
                     var teleporterPos = coll.GetComponent<Teleporter>()?.target?.position;
                     targetPos = teleporterPos.HasValue ? GetCellPosByOffset(dir) : targetPos;
                 }
@@ -143,9 +145,7 @@ namespace Wakaman.Entities
             anim.SetBool("is_moving", false);
         }
 
-        // CheckMoveCollision: Returns true if the player will collide with 
-        //                     a wall in a given movement direction.
-        private bool CheckMoveCollision(Vector3Int dir)
+        private bool CheckWallCollision(Vector3Int dir)
         {
             Vector3 nextCellPos = GetCellPosByOffset(dir);
             var coll = Physics2D.OverlapPoint(nextCellPos, lmWalls.value);

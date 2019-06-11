@@ -21,7 +21,7 @@ namespace Wakaman.Entities
             if (tile is CollectibleTile)
             {
                 var type = (tile as CollectibleTile).Type;
-                Game.OnCollectItem(type);
+                GameEvents.Collect(type);
                 tilemap.SetTile(cellPos, null);
             }
         }
