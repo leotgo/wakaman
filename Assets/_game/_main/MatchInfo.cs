@@ -13,6 +13,8 @@ namespace Wakaman
         private int score;
         private List<FruitType> fruits;
 
+        public float elapsedTime;
+
         private int totalPellets;
         private int remainingPellets;
 
@@ -33,6 +35,18 @@ namespace Wakaman
                 lives = value;
                 GameEvents.LivesChange(lives);
             }
+        }
+        public float ElapsedTime {
+            get => elapsedTime;
+        }
+        public int TotalPellets {
+            get { return totalPellets; }
+        }
+        public int RemainingPellets {
+            get { return remainingPellets; }
+        }
+        public int ConsumedPellets {
+            get { return totalPellets - remainingPellets; }
         }
 
         // -------------------------- //

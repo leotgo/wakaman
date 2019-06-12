@@ -32,6 +32,11 @@ namespace Wakaman
             GameEvents.onCollectFruit += OnCollectFruit;
         }
 
+        private void Update()
+        {
+            matchInfo.elapsedTime += Time.deltaTime;
+        }
+
         // -------------------------- //
         // Event Callbacks
         // -------------------------- //
@@ -66,6 +71,22 @@ namespace Wakaman
             Debug.Assert(instance != null);
             Debug.Assert(instance.tilemap != null);
             return instance.tilemap;
+        }
+
+        public static bool IsNearLevelEnd()
+        {
+            return false;
+            //return instance.matchInfo.RemainingPellets < 15;
+        }
+
+        public static float GetElapsedTime()
+        {
+            return instance.matchInfo.ElapsedTime;
+        }
+
+        public static int GetConsumedPellets()
+        {
+            return instance.matchInfo.ConsumedPellets;
         }
 
         public static int GetScore(CollectibleType type, int stage)

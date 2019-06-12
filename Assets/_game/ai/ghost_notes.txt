@@ -1,0 +1,64 @@
+===================================
+Notes on intended Ghost Behaviour 
+===================================
+
+  * Ghost Behaviour is based on what is described in the
+  * following article:
+  * https://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
+
+General Ghost Traits
+===========================
+
+- Every Ghost operates in two Modes: Scatter (go to a designated
+corner in the screen) and Chase (chase a target tile positioned
+in some relation to player position)
+
+- Changes between Chase and Scatter modes occur on a fixed timer. 
+This timer is  reset at the beginning of each level and whenever 
+a life is lost. The timer is also paused while the ghosts are in 
+Frightened mode, which occurs whenever the player eats a 
+Power-Pellet.
+
+    LEVEL START: 
+        - Scatter for 7 seconds, then Chase for 20 seconds.
+    70% PELLETS CONSUMED: 
+        - Scatter for 5 seconds, then switch to Chase mode 
+          permanently.
+
+- Frightened mode is unique because the ghosts do not have a 
+specific target tile while in this mode. Instead, they 
+pseudorandomly decide which turns to make at every intersection.
+
+
+Individual Ghost Traits
+==========================
+
+- Blinky (red) target tile in Chase mode is defined as Pac-Man 
+  current tile
+
+- Pinky leaves the house at a fixed timer (5 seconds)
+
+- Pinky (pink) target tile in Chase Mode is four tiles ahead of 
+  Pac-Man
+
+- Inky (cyan) doesn't leave the house until the player consumes 
+  at least 30 dots (regular pellets)
+
+- To locate Inky (cyan) target, we first start by selecting the 
+  position two tiles in front of Pac-Man in his current direction 
+  of travel. From there, create a vector from Blinky position to 
+  this tile, and then double the length of the vector. The tile 
+  that this new, extended vector ends on will be Inky (cyan) 
+  target.
+
+- Clyde (orange) is the last to leave the ghost house, and does 
+  not exit at all in the first level until over a third of the 
+  dots have been eaten.
+
+- Whenever Clyde (orange) needs to determine his target tile, he 
+  first calculates his distance from Pac-Man. If he is farther 
+  than eight tiles away, his targeting is identical to Blinky 
+  (chase current player tile). As soon as his distance to Pac-Man 
+  becomes less than eight tiles, Clyde (orange) target is set to 
+  the same tile as his fixed one in Scatter mode, just outside the 
+  bottom-left corner of the maze.

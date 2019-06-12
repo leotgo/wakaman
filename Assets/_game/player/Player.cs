@@ -8,6 +8,9 @@ namespace Wakaman.Entities
     [RequireComponent(typeof(Animator))]
     public class Player : MonoBehaviour
     {
+        // Singleton
+        public static Player instance = null;
+
         // Gameplay
         [Header("Gameplay")]
         [SerializeField] private float speed = 1f;
@@ -25,7 +28,12 @@ namespace Wakaman.Entities
         private bool isDead;
         private bool isMoving;
         private bool isFrozen;
+        private Vector3Int currentMoveDir;
         private Vector3Int lastMoveDir;
+
+        public Vector3Int MoveDir {
+            get => currentMoveDir;
+        }
 
         // -------------------------- //
         // Monobehaviour
@@ -33,6 +41,8 @@ namespace Wakaman.Entities
 
         private void Start()
         {
+            if (!instance)
+                instance = this;
             anim = GetComponent<Animator>();
             startPos = transform.position;
             Respawn();
@@ -69,6 +79,7 @@ namespace Wakaman.Entities
             anim.SetFloat("dir_y", 0f);
 
             transform.position = startPos;
+            currentMoveDir = Vector3Int.right;
         }
 
         private void Freeze(bool frozen)
@@ -141,6 +152,7 @@ namespace Wakaman.Entities
         //                  to the next tile.
         IEnumerator MoveTileRoutine(Vector3Int dir)
         {
+            currentMoveDir = dir;
             isMoving = true;
             anim.SetBool("is_moving", true);
             anim.SetFloat("dir_x", dir.x);
