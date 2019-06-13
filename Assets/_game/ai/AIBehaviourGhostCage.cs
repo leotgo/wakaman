@@ -12,19 +12,24 @@ namespace Wakaman.AI
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             ghost = !ghost ? animator.GetComponent<GhostAI>() : ghost;
-            tilemap = !tilemap ? Game.GetTilemap() : tilemap;
+            tilemap = !tilemap ? MapInfo.CollisionMap : tilemap;
             // The following line is weird, but is done because of lazyness to make it work 
             // with the line in OnStateUpdate: "isMovingDown = !isMovingDown"
             isMovingDown = !ghost.StartMovingDownInCage;
+            animator.SetBool("is_retreating", false);
             if (!ghost.StartInCage)
             {
                 animator.SetBool("is_chasing", true);
                 animator.SetBool("is_in_cage", false);
             }
+            ghost.CurrentSpeed = ghost.ScaredSpeed;
         }
 
         override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            if (!ghost.IsReady)
+                return;
+
             if (ghost.HasStopped && ghost.StartInCage)
             {
                 if (ghost.CanLeaveCage)
@@ -44,6 +49,7 @@ namespace Wakaman.AI
         override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             animator.SetBool("is_in_cage", false);
+            ghost.CurrentSpeed = ghost.DefaultSpeed;
         }
     }
 }

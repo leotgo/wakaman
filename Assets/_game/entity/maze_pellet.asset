@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6650b28f03374941aa72704f052b6a8, type: 3}
   m_Name: maze_pellet
   m_EditorClassIdentifier: 
+  animSprites:
+  - {fileID: 6758505969257820275, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}
+  animSpeed: 1
+  animStart: 0
   type: 0
-  sprite: {fileID: -1819112362194845485, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}

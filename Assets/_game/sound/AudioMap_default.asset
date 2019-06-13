@@ -40,3 +40,27 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     pitchVariance: 0
+  - name: EVENT_EXTRA_LIFE
+    type: 4
+    clips:
+    - {fileID: 8300000, guid: afbe02f5e4ef5f84fbf0874163617133, type: 3}
+    method: 0
+    volume: 1
+    pitch: 1
+    pitchVariance: 0
+  - name: EVENT_EAT_GHOST
+    type: 5
+    clips:
+    - {fileID: 8300000, guid: b4a6ccc16a4f61e42b4a58426e5a67ad, type: 3}
+    method: 0
+    volume: 1
+    pitch: 1
+    pitchVariance: 0
+  - name: EVENT_MUNCH_POWER
+    type: 1
+    clips:
+    - {fileID: 8300000, guid: b4a6ccc16a4f61e42b4a58426e5a67ad, type: 3}
+    method: 0
+    volume: 1
+    pitch: 1
+    pitchVariance: 0

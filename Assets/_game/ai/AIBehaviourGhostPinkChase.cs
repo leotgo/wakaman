@@ -17,7 +17,7 @@ namespace Wakaman.AI
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             player = !player ? Player.instance : player;
-            tilemap = !tilemap ? Game.GetTilemap() : tilemap;
+            tilemap = !tilemap ? MapInfo.CollisionMap : tilemap;
             pathfinding = !pathfinding ? Pathfinding.instance : pathfinding;
             ghost = !ghost ? animator.GetComponent<GhostAI>() : ghost;
 

@@ -28,8 +28,9 @@ namespace Wakaman.AI
             }
             else
             {
-                if (ghost.HasStopped || currUpdateTime > updateTargetPosTime)
+                if (ghost.needsTargetRecalc || ghost.HasStopped || currUpdateTime > updateTargetPosTime)
                 {
+                    ghost.needsTargetRecalc = false;
                     currUpdateTime = 0f;
                     ghost.MoveTo(Player.instance.transform.position);
                 }

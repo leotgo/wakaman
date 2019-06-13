@@ -12,7 +12,6 @@ namespace Wakaman.AI
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             ghost = !ghost ? animator.GetComponent<GhostAI>() : ghost;
-            ghost.MoveTo(Player.instance.transform.position);
             currScatterTime = 0.0f;
             currPosIndex = 0;
             ghost.MoveTo(ghost.CornerPositions[0].position);

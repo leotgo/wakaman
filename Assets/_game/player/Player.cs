@@ -14,9 +14,11 @@ namespace Wakaman.Entities
         // Gameplay
         [Header("Gameplay")]
         [SerializeField] private float speed = 1f;
+        [SerializeField] private float inputDelayTolerance = 0.7f;
 
         // Component Refs 
         private Animator anim;
+        private SpriteRenderer spr;
 
         // Collision masks
         [Header("Collision masks")]
@@ -28,11 +30,23 @@ namespace Wakaman.Entities
         private bool isDead;
         private bool isMoving;
         private bool isFrozen;
+        private bool isReady;
+        private float lastInputDirTime;
+        private Vector3Int lastInputDir;
         private Vector3Int currentMoveDir;
         private Vector3Int lastMoveDir;
 
         public Vector3Int MoveDir {
             get => currentMoveDir;
+        }
+        public bool IsDead {
+            get => isDead;
+        }
+        public bool IsReady {
+            get => isReady;
+        }
+        public bool IsFrozen {
+            get => isFrozen;
         }
 
         // -------------------------- //
@@ -43,23 +57,51 @@ namespace Wakaman.Entities
         {
             if (!instance)
                 instance = this;
+
             anim = GetComponent<Animator>();
+            spr = GetComponentInChildren<SpriteRenderer>();
             startPos = transform.position;
-            Respawn();
+
+            GameEvents.onFinishLevel += OnFinishLevel;
+            GameEvents.onMatchStart += OnMatchStart;
+            GameEvents.onRoundStart += Respawn;
         }
 
         private void Update()
         {
+            if (!isReady)
+                return;
+
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
-            Vector3Int dir = GetMovementDir(x, y);
+            var dir = GetMovementDir(x, y);
+
+            lastInputDirTime += Time.deltaTime;
+            if(lastInputDirTime > inputDelayTolerance)
+                lastInputDir = Vector3Int.zero;
+
             if (dir.magnitude > 0f)
             {
-                if (!isMoving)
-                    Move(dir);
+                // Buffers last input done by the player for a
+                // timing tolerance when turning corners.
+                lastInputDir = dir;
+                lastInputDirTime = 0f;
             }
 
-            if (Input.GetButtonDown("Fire1"))
+            if (!isMoving)
+            {
+                if (lastInputDir.magnitude > 0f)
+                {
+                    bool moved = Move(lastInputDir);
+                    if (!moved)
+                        Move(currentMoveDir);
+                }
+                else
+                    Move(currentMoveDir);
+            }
+
+            // Cheat code to quickly suicide
+            if (Input.GetKeyDown(KeyCode.F10))
                 Die();
         }
 
@@ -72,6 +114,7 @@ namespace Wakaman.Entities
             isDead = false;
             isMoving = false;
             isFrozen = false;
+            this.Delay(Game.RESPAWN_FREEZE_TIME, () => { isReady = true; });
 
             anim.SetBool("is_moving", false);
             anim.SetBool("is_dead", false);
@@ -79,6 +122,7 @@ namespace Wakaman.Entities
             anim.SetFloat("dir_y", 0f);
 
             transform.position = startPos;
+            lastInputDir = Vector3Int.zero;
             currentMoveDir = Vector3Int.right;
         }
 
@@ -87,27 +131,53 @@ namespace Wakaman.Entities
             isFrozen = frozen;
         }
 
-        private void Die()
+        public void Die()
         {
             if (isDead)
                 return;
 
+            StopAllCoroutines();
             StartCoroutine(DeathRoutine());
         }
 
         private IEnumerator DeathRoutine()
         {
+            isReady = false;
             isDead = true;
+            bool isGameOver = Game.Lives == 0;
+            if (isGameOver)
+                Game.IsGameOver = true;
+            GameEvents.Death();
             Time.timeScale = 0f;
-            yield return new WaitForSecondsRealtime(1f);
+            yield return new WaitForSecondsRealtime(Game.DEATH_STUTTER_TIME);
             Time.timeScale = 1f;
             anim.SetBool("is_dead", true);
-            GameEvents.Death();
-            yield return new WaitForSeconds(3f);
-            Respawn();
-            Freeze(true);
-            yield return new WaitForSeconds(1f);
-            Freeze(false);
+
+            if (!isGameOver)
+            {
+                yield return new WaitForSecondsRealtime(Game.ROUND_START_TIME);
+                Respawn();
+                Freeze(true);
+                yield return new WaitForSecondsRealtime(Game.RESPAWN_FREEZE_TIME);
+                Freeze(false);
+                isReady = true;
+            }
+        }
+
+        // -------------------------- //
+        // Events
+        // -------------------------- //
+
+        private void OnMatchStart()
+        {
+            isReady = false;
+            StopAllCoroutines();
+        }
+
+        private void OnFinishLevel()
+        {
+            isReady = false;
+            StopAllCoroutines();
         }
 
         // -------------------------- //
@@ -116,10 +186,10 @@ namespace Wakaman.Entities
 
         // Move: Checks for wall collision and performs intended player
         //       movement when possible.
-        private void Move(Vector3Int dir)
+        private bool Move(Vector3Int dir)
         {
             if (isDead || isFrozen)
-                return;
+                return false;
 
             bool isHorizontal = Mathf.Abs(dir.x) > 0f;
             // Adjacent tiles are checked to see if the player is close to a
@@ -135,16 +205,31 @@ namespace Wakaman.Entities
             if (!CheckWallCollision(dir))
             {
                 StartCoroutine(MoveTileRoutine(dir));
+                return true;
             }
             // Checks if tiles adjacent to the next are walls and assists
             // player movement when turning corners (less precision required!)
             else if (!adj1IsInverseDir && !CheckWallCollision(dir + adjDir1))
             {
                 StartCoroutine(MoveTileRoutine(adjDir1));
+                return true;
             }
             else if (!adj2IsInverseDir && !CheckWallCollision(dir + adjDir2))
             {
                 StartCoroutine(MoveTileRoutine(adjDir2));
+                return true;
+            }
+            else
+            {
+                // Checks if there are any interactor objects in player's position
+                // This is redundant code in case the player is idle (by not turning
+                // at any wall collision).
+                var coll = Physics2D.OverlapPoint(transform.position, lmInteractors.value);
+                if (coll != null)
+                {
+                    coll.GetComponent<IInteractable>()?.OnInteract(this);
+                }
+                return false;
             }
         }
 
@@ -216,9 +301,8 @@ namespace Wakaman.Entities
 
         private Vector3 GetCellPosByOffset(Vector3Int offset)
         {
-            Tilemap tilemap = Game.GetTilemap();
-            Vector3Int currCell = tilemap.WorldToCell(transform.position);
-            Vector3 pos = tilemap.GetCellCenterWorld(currCell + offset);
+            Vector3Int currCell = MapInfo.CollisionMap.WorldToCell(transform.position);
+            Vector3 pos = MapInfo.CollisionMap.GetCellCenterWorld(currCell + offset);
             return pos;
         }
     }

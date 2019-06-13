@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6650b28f03374941aa72704f052b6a8, type: 3}
+  m_Name: maze_powerpellet
+  m_EditorClassIdentifier: 
+  animSprites:
+  - {fileID: -7676133910218803252, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}
+  - {fileID: 5055651290741422906, guid: 4c9d06dff7221bc4fb42cefe7d4047d6, type: 3}
+  animSpeed: 3
+  animStart: 0
+  type: 1

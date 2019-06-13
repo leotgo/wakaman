@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Wakaman.Entities;
+using Wakaman.Utilities;
 
 namespace Wakaman.Sound
 {
@@ -23,6 +24,8 @@ namespace Wakaman.Sound
             audioSrc = GetComponent<AudioSource>();
             GameEvents.onCollect += OnCollectItem;
             GameEvents.onDeath += OnPlayerDeath;
+            GameEvents.onExtraLife += OnExtraLife;
+            GameEvents.onEatGhost += OnEatGhost;
 
             if (!audioMap)
                 Debug.LogWarningFormat("AudioMap is not set in {0}", name);
@@ -52,7 +55,19 @@ namespace Wakaman.Sound
 
         private void OnPlayerDeath()
         {
-            audioMap?.GetEvent(AudioEvent.AudioEventType.Death)?.Play(audioSrc);
+            this.Delay(Game.DEATH_STUTTER_TIME, () => {
+                audioMap?.GetEvent(AudioEvent.AudioEventType.Death)?.Play(audioSrc);
+            });
+        }
+
+        private void OnExtraLife()
+        {
+            audioMap?.GetEvent(AudioEvent.AudioEventType.ExtraCredit)?.Play(audioSrc);
+        }
+
+        private void OnEatGhost()
+        {
+            audioMap?.GetEvent(AudioEvent.AudioEventType.EatGhost)?.Play(audioSrc);
         }
     }
 }

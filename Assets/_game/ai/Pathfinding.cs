@@ -6,9 +6,18 @@ using Wakaman.Utilities;
 
 namespace Wakaman.AI
 {
+    /* 
+     * About the Pathfinding presented here:
+     *   This implementation uses A* pathfinding. According to
+     *   the article used to base the Ghosts AI, the original
+     *   game uses a much simpler greedy solution. Therefore,
+     *   this A* solution should make the game (slightly)
+     *   harder.
+     *
+     */
     public class Pathfinding : MonoBehaviour
     {
-        // Definitions
+        // Graph Definitions
         public class Graph
         {
             public Dictionary<Vector3Int, Node> nodes;
@@ -33,23 +42,8 @@ namespace Wakaman.AI
         // Singleton
         public static Pathfinding instance = null;
 
-        // Map Info Editor-Tweakables
-        [SerializeField] private Tilemap collisionMap;
-        [SerializeField] private Transform upperLeftBound;
-        [SerializeField] private Transform lowerRightBound;
-        [SerializeField] private Transform cageCenter;
-        [SerializeField] private Transform cageExit;
-
         // Runtime
         private Graph graph;
-
-        // Accessors
-        public Vector3 CageCenter {
-            get => cageCenter.position;
-        }
-        public Vector3 CageExit {
-            get => cageExit.position;
-        }
 
         // -------------------------- //
         // Monobehaviour
@@ -69,8 +63,8 @@ namespace Wakaman.AI
         {
             graph = new Graph();
 
-            Vector3Int start = collisionMap.WorldToCell(upperLeftBound.position);
-            Vector3Int end = collisionMap.WorldToCell(lowerRightBound.position);
+            Vector3Int start = MapInfo.UpperBound;
+            Vector3Int end = MapInfo.LowerBound;
             int xLength = Mathf.Abs(end.x - start.x);
             int yLength = Mathf.Abs(start.y - end.y);
 
@@ -81,7 +75,7 @@ namespace Wakaman.AI
                     int x = start.x + i;
                     int y = start.y - j;
                     Vector3Int pos = new Vector3Int(x, y, start.z);
-                    bool hasTile = collisionMap.HasTile(pos);
+                    bool hasTile = MapInfo.CollisionMap.HasTile(pos);
                     if (!hasTile)
                     {
                         Node node = new Node();
@@ -104,8 +98,8 @@ namespace Wakaman.AI
             }
             /* 
              * Debug code: 
-             * Was used to check if nodes neighbourhood
-             * was being generated properly.
+             *   Was used to check if nodes neighbourhood
+             *   was being generated properly.
              * 
             foreach(var node in graph.nodes.Values)
             {
@@ -123,24 +117,30 @@ namespace Wakaman.AI
         // Pathfinding algorithm
         // -------------------------- //
 
-        public Vector3Int[] GetPath(Vector3Int origin, Vector3Int target)
+        public Vector3Int[] GetPath(Vector3Int origin, Vector3Int target, Vector3Int startDir)
         {
+            // Position is blocked to ensure that Ghosts do not 
+            // reverse movement direction
+            Vector3Int blockPos = origin + (startDir * -1);
+
+            // Debug-only code. Used to check if coordinate exists 
+            // in the generated graph
             if (!graph.nodes.ContainsKey(origin))
             {
                 Debug.LogErrorFormat("Origin position {0} not present in Playable game grid from {1}", origin, name);
                 GameObject go = new GameObject("ERROR POSITION " + target);
-                go.transform.position = collisionMap.GetCellCenterWorld(target);
+                go.transform.position = MapInfo.CollisionMap.GetCellCenterWorld(target);
                 return new Vector3Int[0];
             }
-
             if (!graph.nodes.ContainsKey(target))
             {
                 Debug.LogErrorFormat("Target position {0} not present in Playable game grid from {1}", target, name);
                 GameObject go = new GameObject("ERROR POSITION " + target);
-                go.transform.position = collisionMap.GetCellCenterWorld(target);
+                go.transform.position = MapInfo.CollisionMap.GetCellCenterWorld(target);
                 return new Vector3Int[0];
             }
 
+            // Here goes the A* implementation using Manhattan Distance
             var frontier = new PriorityQueue<Node>();
             var visited = new List<Node>();
 
@@ -148,21 +148,25 @@ namespace Wakaman.AI
             Node endNode = graph.nodes[target];
 
             frontier.Add(startNode, 0);
-            var source = new Dictionary<Node, Node>();
-            var accCost = new Dictionary<Node, int>();
+            var source = new Dictionary<Node, Node>(); // Used to reconstruct path (breadcrumbs!)
+            var accCost = new Dictionary<Node, int>(); // Dijkstra cost accumulation
 
             source[startNode] = null;
             accCost[startNode] = 0;
 
+            Node current = null;
             while (!frontier.IsEmpty)
             {
-                Node current = frontier.Dequeue();
-
+                current = frontier.Dequeue();
                 if (current == endNode)
                     break;
 
                 foreach (var next in current.neighbours)
                 {
+                    // Ignore the blocked position
+                    if (next.pos == blockPos)
+                        continue;
+
                     int newCost = accCost[current] + 1;
                     if (!accCost.ContainsKey(next) || newCost < accCost[next])
                     {
@@ -174,12 +178,16 @@ namespace Wakaman.AI
                 }
             }
 
+            // Path reconstruction
             var path = new List<Vector3Int>();
-            Node curr = endNode;
-            while (source[curr] != null)
+            if(current != null)
             {
-                path.Add(curr.pos);
-                curr = source[curr];
+                Node n = current;
+                while (source[n] != null)
+                {
+                    path.Add(n.pos);
+                    n = source[n];
+                }
             }
             path.Reverse();
             return path.ToArray();
@@ -190,9 +198,28 @@ namespace Wakaman.AI
             return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
         }
 
+        /*
+         *
+         *   hang loose             _
+         *        _        ,-.    / )
+         *       ( `.     // /-._/ /
+         *        `\ \   /(_/ / / /
+         *          ; `-`  (_/ / /
+         *          |       (_/ /
+         *          \          /
+         *           )       /`
+         *          /      /`
+         *
+         */
+
         // -------------------------- //
         // Helpers
         // -------------------------- //
+
+        public static Vector3Int GetTilePos(Vector3 pos)
+        {
+            return MapInfo.CollisionMap.WorldToCell(pos);
+        }
 
         public Vector3Int GetNearestTileInBounds(Vector3Int origin, Vector3Int offset)
         {
@@ -203,13 +230,21 @@ namespace Wakaman.AI
             for (int i = max; i >= 0; i--)
             {
                 var v = dir * i;
-                if (!collisionMap.HasTile(origin + v))
+                if (IsPositionInBounds(origin+v) && !MapInfo.CollisionMap.HasTile(origin + v))
                 {
                     nearest = origin + v;
                     break;
                 }
             }
             return nearest;
+        }
+
+        public bool IsPositionInBounds(Vector3Int pos)
+        {
+            return pos.x > MapInfo.UpperBound.x && 
+                   pos.x < MapInfo.LowerBound.x && 
+                   pos.y < MapInfo.UpperBound.y && 
+                   pos.y > MapInfo.LowerBound.y;
         }
 
         public int GetTileDistance(Vector3Int a, Vector3Int b)

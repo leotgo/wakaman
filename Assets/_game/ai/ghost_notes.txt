@@ -9,6 +9,8 @@ Notes on intended Ghost Behaviour
 General Ghost Traits
 ===========================
 
+- Ghosts dont ever reverse their current direction! (very important)
+
 - Every Ghost operates in two Modes: Scatter (go to a designated
 corner in the screen) and Chase (chase a target tile positioned
 in some relation to player position)

@@ -11,7 +11,15 @@ namespace Wakaman.UI
 
         private void Start()
         {
+            GameEvents.onClearScreen += OnClearScreen;
             GameEvents.onFruitsChange += OnFruitsChange;
+            GameEvents.onRoundStart += () => { OnFruitsChange(Game.Fruits); };
+        }
+
+        private void OnClearScreen()
+        {
+            for (int i = 0; i < fruitsSprites.Length; i++)
+                fruitsSprites[i].enabled = false;
         }
 
         private void OnFruitsChange(List<FruitType> fruits)

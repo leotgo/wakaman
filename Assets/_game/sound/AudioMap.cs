@@ -29,7 +29,9 @@ namespace Wakaman.Sound
             Munch,
             PowerPellet,
             Fruit,
-            Death
+            Death,
+            ExtraCredit,
+            EatGhost
         }
 
         public enum SelectionMethod
