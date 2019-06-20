@@ -10,3 +10,7 @@ This is my take on 80's arcade classic Pac-Man done in Unity. It was a project d
 - Animator-based State Machine for the AI;
 - Observer pattern for Audio and Game Events;
 - A* Pathfinding for the Ghosts - better than the original algorithm!
+
+## Screenshots
+
+<img src="Screenshots/img_ss0.png" width="336" height="432">
