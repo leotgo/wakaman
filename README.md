@@ -4,9 +4,9 @@ Wakaman is a Pac-Man implementation done in Unity using [Tileset Tools](https://
 
 ## Description
 
-This is a modern implementation of 80's arcade classic Pac-Man done in Unity. It contains some interesting (although messy) code architecture decisions.
+This is a modern implementation of 80's arcade classic Pac-Man done in Unity. It contains some interesting code architecture decisions, such as the usage of the Unity built-in state machine for implementing the AI and an event system for Audio, UI and Game State control.
 
-The AI is based on the original game AI (described [here](https://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior)), although with a more sophisticated ghost pathing.
+The AI is based on the original game AI (described [here](https://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior)) with ghost pathing enhancements.
 
 ## Key features
 - Animator-based State Machine for the AI;
