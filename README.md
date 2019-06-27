@@ -20,7 +20,7 @@ The AI is based on the original game AI (described [here](https://gameinternals.
 ## Contact
 
 Wakaman is a project made by Leonardo Tagliaro.
-[leonardotgo@gmail.com](mailto:leonardotgo@gmail.com)
-[Facebook](https://www.facebook.com/leonardo.tagliaro)
-[Twitter](https://twitter.com/leotgo)
-[itch.io](https://leotgo.itch.io/)
+* [leonardotgo@gmail.com](mailto:leonardotgo@gmail.com)
+* [Facebook](https://www.facebook.com/leonardo.tagliaro)
+* [Twitter](https://twitter.com/leotgo)
+* [itch.io](https://leotgo.itch.io/)
